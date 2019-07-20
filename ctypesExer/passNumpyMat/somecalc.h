@@ -1,0 +1,1 @@
+float twice(float x);

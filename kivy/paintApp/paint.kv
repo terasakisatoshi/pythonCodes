@@ -1,0 +1,13 @@
+<CanvasWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 2
+        spacing: 2
+        x:0
+        top: root.top
+        Button:
+            text: 'Delete'
+            on_release:root.clear_canvas()
+        Button:
+            text: 'Predict'
+            on_release:root.predict_number()

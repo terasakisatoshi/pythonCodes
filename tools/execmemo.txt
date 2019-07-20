@@ -1,0 +1,2 @@
+$ cd path-of-modulecaller.py
+$ python modulecaller.py -rel=..\snippets -mod=..\testmodule\hello.exe -ext="py"

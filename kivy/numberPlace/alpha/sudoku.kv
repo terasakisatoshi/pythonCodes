@@ -1,0 +1,40 @@
+#:set padding 20
+
+<MainGrid@GridLayout>:
+    rows:9
+    cols:9
+
+<CustomButton@Button>:
+    size_hint_x: 1
+    size_hint_y: 1
+    font_size: '30dp'
+
+FloatLayout:
+    BoxLayout:
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint: (None, None)
+        center: root.center
+        size: [min(root.width, root.height) - 2 * padding] * 2
+        orientation: 'vertical'
+        BoxLayout:
+            id:blayout
+            orientation: 'horizontal'
+            size_hint_y: 0.5
+            Label:
+                size_hint_x: 0.5
+                text:'SudokuSolver'
+            Button:
+                id:reset 
+                size_hint_x: 0.25
+                text:'Reset'
+                on_press:app.reset()
+            Button:
+                id:solve 
+                size_hint_x: 0.25
+                text:'Solve'
+                on_press:app.solve()
+        MainGrid:
+            id:main_grid
+            size_hint_y: 9
+            center: root.center
+            size: [min(root.width, root.height) - 2 * padding] * 2

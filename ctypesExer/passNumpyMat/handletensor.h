@@ -1,0 +1,1 @@
+float* handle_tensor(const float* tensor,float* ret);

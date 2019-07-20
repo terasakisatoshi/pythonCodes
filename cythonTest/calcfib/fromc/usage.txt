@@ -1,0 +1,1 @@
+> python setup_wrap.py build_ext -i --compiler=msvc

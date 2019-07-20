@@ -1,0 +1,22 @@
+AddLocationForm:
+
+<AddLocationForm>:
+    orientation: "vertical"
+    BoxLayout:
+        height: '40dp'
+        size_hint_y: None
+        TextInput:
+            size_hint_x: 2
+        Button:
+            text: "Search"
+            size_hint_x: 1
+        Button:
+            text: "Current Location"
+            size_hint_x: 2
+            size_hint_y: 0.5
+        Button:
+            text: 'none'
+            size_hint: (3, 1)
+            on_press: root.zen_of_python()
+    ListView:
+        item_strings: ["Palo Alto, Mx", "Palo Alto, US"]

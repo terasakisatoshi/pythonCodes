@@ -1,0 +1,1 @@
+python textfinder.py ".\snippets" "py"

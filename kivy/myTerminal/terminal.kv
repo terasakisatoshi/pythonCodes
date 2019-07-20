@@ -1,0 +1,29 @@
+
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.5
+        Label:
+            text: 'Command'
+            size_hint_x: 1
+        TextInput:
+            id: command
+            text: ''
+            focus:True
+            multiline: False
+            write_tab: False
+            size_hint_x: 8
+        Button:
+            id: button
+            text: 'Exec'
+            on_press:app.start_command()
+    Label:
+        text: 'Output'
+        size_hint_y: 0.5
+    TextInput:
+        id:output
+        write_tab: False
+        text: ''
+        size_hint_y: 9
+        readonly: True

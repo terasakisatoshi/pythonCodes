@@ -1,0 +1,30 @@
+.
+|-- build.bat
+|-- compare_res.py
+|-- parallel
+|   |-- build
+|   |   `-- temp.win-amd64-3.5
+|   |       `-- Release
+|   |           |-- calc_julia.obj
+|   |           |-- julia_parallel.cp35-win_amd64.exp
+|   |           `-- julia_parallel.cp35-win_amd64.lib
+|   |-- calc_julia.c
+|   |-- calc_julia.pyx
+|   |-- julia_parallel.cp35-win_amd64.pyd
+|   |-- main.py
+|   `-- setup.py
+|-- single
+|   |-- build
+|   |   `-- temp.win-amd64-3.5
+|   |       `-- Release
+|   |           |-- calc_julia.obj
+|   |           |-- julia_single.cp35-win_amd64.exp
+|   |           `-- julia_single.cp35-win_amd64.lib
+|   |-- calc_julia.c
+|   |-- calc_julia.pyx
+|   |-- julia_single.cp35-win_amd64.pyd
+|   |-- main.py
+|   `-- setup.py
+`-- tree.txt
+
+8 directories, 19 files

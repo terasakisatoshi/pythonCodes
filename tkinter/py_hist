@@ -1,0 +1,5 @@
+ls
+ls -a
+pyenv install -l 
+pyenv global
+pyenv global -l
