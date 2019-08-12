@@ -1,2 +1,5 @@
+from mypack.myfunc import greet
+
+
 def test_hello():
-    print("goma")
+    greet()
